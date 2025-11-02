@@ -30,7 +30,7 @@
       msg: "{{item.instances[0].public_ip_address}}"
     loop: "{{ec2_output.results}}"
     loop_control:
-    label: "{{ item.instances[0].public_ip_address }}"
+      label: "{{ item.instances[0].public_ip_address }}"
 
     
 
